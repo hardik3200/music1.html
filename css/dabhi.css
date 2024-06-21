@@ -1,0 +1,989 @@
+/* varriable */
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.eot");
+  src: url("../fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff"), url("../fonts/Oswald-Regular.ttf") format("truetype"), url("../fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.eot");
+  src: url("../fonts/Oswald-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff"), url("../fonts/Oswald-Bold.ttf") format("truetype"), url("../fonts/Oswald-Bold.svg#Oswald-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.btn a {
+  max-width: 323px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: #e8631c;
+  border-radius: 15px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 32px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8631c;
+  margin: 0;
+  font-family: "Oswald-Regular";
+  -transition-duration: 500ms;
+}
+
+.container {
+  float: left;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.dance-section, .footer-section, .subscribe-section, .stik-section, .prince-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #e8631c;
+  text-align: center;
+}
+
+.dance-title, .subscribe-section .subscribe-title, .stik-section .stik-title, .prince-section .prince-title {
+  max-width: 830px;
+  display: inline-block;
+}
+
+.dance-bg, .prince-section .prince-full .prince-mrg .prince-bg {
+  float: left;
+  width: 33.33%;
+  padding: 0 32px;
+  line-height: 1px;
+}
+
+.dance-full, .stik-section .stik-full, .prince-section .prince-full {
+  float: left;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.dance-mrg, .prince-section .prince-full .prince-mrg {
+  margin: 0 -32px;
+}
+
+h2 {
+  font-size: 75px;
+  line-height: 77px;
+  color: #fff;
+  font-family: "Oswald-Bold";
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 30px;
+  line-height: 32px;
+  color: #fff;
+  font-family: "Montserrat-Regular";
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*script style start*/
+.mobile-menu {
+  display: none;
+}
+
+.mm-menu--theme-white {
+  --mm-color-background:#303030;
+  --mm-color-text:#fff;
+}
+
+.mm-navbar__title > span {
+  color: #fff;
+}
+
+.mobile-menu img:last-child, .mm-wrapper--opened .mobile-menu img:first-child {
+  display: none;
+}
+
+.mm-wrapper--opened .mobile-menu img:last-child {
+  display: block;
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel {
+  display: block;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.owl-dots span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+button, .button {
+  margin: 0;
+}
+
+.owl-dots button.active span {
+  background: #000;
+}
+
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  /* initially pause animatable objects their animations */
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+}
+
+/*header style start */
+.header-section {
+  background: #303030;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-section .logo {
+  text-align: left;
+}
+.header-section .table .table-cell:first-child {
+  width: 130px;
+}
+.header-section .table .table-cell:last-child {
+  width: 30px;
+}
+.header-section .search {
+  text-align: right;
+}
+.header-section nav {
+  text-align: center;
+}
+.header-section nav ul {
+  list-style: none;
+}
+.header-section nav ul li {
+  display: inline-block;
+  padding: 0 25px;
+}
+.header-section nav ul li a {
+  color: #fff;
+  font-size: 25px;
+}
+.header-section nav ul li a:hover {
+  color: #e8631c;
+  transition-duration: 500ms;
+}
+
+/*banner style start*/
+.banner-section {
+  background: url(../images/banner.jpg) no-repeat;
+  height: 693px;
+  background-size: cover;
+  position: relative;
+}
+.banner-section .banner-content {
+  position: absolute;
+  bottom: 70px;
+  max-width: 620px;
+}
+.banner-section .banner-content h1 {
+  font-size: 124px;
+  line-height: 126px;
+  color: #fff;
+}
+.banner-section .banner-content p {
+  margin-top: 20px;
+}
+.banner-section .banner-content a {
+  color: #fff;
+  font-size: 30px;
+}
+.banner-section .banner-content .btn a:hover {
+  background: #120802;
+  transition-duration: 500ms;
+}
+
+/*dance-section*/
+.dance-section .dance-title p, .footer-section .dance-title p, .subscribe-section .dance-title p, .subscribe-section .subscribe-title p, .stik-section .dance-title p, .stik-section .stik-title p, .prince-section .dance-title p, .prince-section .prince-title p {
+  margin-top: 40px;
+}
+.dance-section .dance-full .dance-mrg .dance-bg, .footer-section .dance-full .dance-mrg .dance-bg, .subscribe-section .dance-full .dance-mrg .dance-bg, .stik-section .dance-full .dance-mrg .dance-bg, .stik-section .stik-full .dance-mrg .dance-bg, .prince-section .dance-full .dance-mrg .dance-bg, .prince-section .prince-full .dance-mrg .dance-bg, .prince-section .prince-full .prince-mrg .dance-bg, .prince-section .prince-full .prince-mrg .prince-bg {
+  width: 100%;
+}
+.dance-section .dance-full .dance-mrg img, .footer-section .dance-full .dance-mrg img, .subscribe-section .dance-full .dance-mrg img, .stik-section .dance-full .dance-mrg img, .stik-section .stik-full .dance-mrg img, .prince-section .dance-full .dance-mrg img, .prince-section .prince-full .dance-mrg img, .prince-section .prince-full .prince-mrg img {
+  width: 100%;
+}
+.dance-section .dance-full .dance-mrg .dance-content, .footer-section .dance-full .dance-mrg .dance-content, .subscribe-section .dance-full .dance-mrg .dance-content, .stik-section .dance-full .dance-mrg .dance-content, .stik-section .stik-full .dance-mrg .dance-content, .prince-section .dance-full .dance-mrg .dance-content, .prince-section .prince-full .dance-mrg .dance-content, .prince-section .prince-full .prince-mrg .dance-content {
+  background: #303030;
+  padding: 20px;
+}
+.dance-section .dance-full .dance-mrg .dance-content h3, .footer-section .dance-full .dance-mrg .dance-content h3, .subscribe-section .dance-full .dance-mrg .dance-content h3, .stik-section .dance-full .dance-mrg .dance-content h3, .stik-section .stik-full .dance-mrg .dance-content h3, .prince-section .dance-full .dance-mrg .dance-content h3, .prince-section .prince-full .dance-mrg .dance-content h3, .prince-section .prince-full .prince-mrg .dance-content h3 {
+  color: #fff;
+  line-height: 39px;
+  font-size: 37px;
+}
+.dance-section .dance-full .dance-mrg .dance-content p, .footer-section .dance-full .dance-mrg .dance-content p, .subscribe-section .dance-full .dance-mrg .dance-content p, .stik-section .dance-full .dance-mrg .dance-content p, .stik-section .stik-full .dance-mrg .dance-content p, .prince-section .dance-full .dance-mrg .dance-content p, .prince-section .prince-full .dance-mrg .dance-content p, .prince-section .prince-full .prince-mrg .dance-content p {
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+/*prince style start*/
+.prince-section {
+  background: #303030;
+}
+.prince-section .prince-title p {
+  margin-top: 40px;
+}
+.prince-section .prince-full .prince-mrg .prince-bg {
+  width: 33.33%;
+}
+.prince-section .prince-full .prince-mrg .prince-bg img {
+  width: auto;
+}
+.prince-section .prince-full .prince-mrg .prince-bg .prince-content {
+  background: #e8631c;
+  padding: 60px 25px 25px 30px;
+  border-radius: 8px;
+}
+.prince-section .prince-full .prince-mrg .prince-bg .prince-content h3 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 27px;
+  text-transform: uppercase;
+  font-family: "Oswald-Bold";
+  font-weight: 600;
+  padding-top: 50px;
+}
+.prince-section .prince-full .prince-mrg .prince-bg .prince-content p {
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.prince-section .prince-full .prince-mrg .prince-bg .prince-content .btn a {
+  background: #303030;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+.prince-section .prince-full .prince-mrg .prince-bg .prince-content .btn a:hover {
+  background: #080808;
+  transition-duration: 500ms;
+}
+
+/*best-saection*/
+.best-section .best-image {
+  background: url(../images/image.png) no-repeat right top;
+  background-size: cover;
+  height: 955px;
+}
+.best-section .best-image img {
+  width: 100%;
+  display: none;
+}
+.best-section .content {
+  max-width: 612px;
+  display: inline-block;
+  padding-left: 75px;
+}
+.best-section .content p {
+  font-size: 26px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+.best-section .content .btn a {
+  background: #303030;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+.best-section .content .btn a:hover {
+  background: #080808;
+  transition-duration: 500ms;
+}
+.best-section .content.right {
+  float: right;
+  padding-right: 75px;
+  padding-left: 0;
+}
+
+/*stik style start*/
+.stik-section {
+  background: #303030;
+}
+.stik-section .stik-full .stik-mrg {
+  margin: 0 -50px;
+}
+.stik-section .stik-full .stik-mrg .stik-bg {
+  float: left;
+  width: 33.33%;
+  padding: 0 50px;
+}
+.stik-section .stik-full .stik-mrg .stik-bg .stik-content h3 {
+  font-size: 67px;
+  line-height: 69px;
+  color: #fff;
+  font-family: "Oswald-Bold";
+}
+.stik-section .stik-full .stik-mrg .stik-bg .stik-content h3:after {
+  content: "+";
+}
+.stik-section .stik-full .stik-mrg .stik-bg .stik-content h4 {
+  font-size: 42px;
+  line-height: 44px;
+  font-family: "Montserrat-Regular";
+  color: #fff;
+  margin-top: 30px;
+}
+
+/*middle style start*/
+.middle-section {
+  background: url(../images/middle.jpg) no-repeat center;
+  background-size: cover;
+  height: 971px;
+  position: relative;
+  text-align: center;
+}
+.middle-section .middle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 905px;
+  display: inline-block;
+  z-index: 1;
+}
+.middle-section .middle-content h3 {
+  font-size: 58px;
+  line-height: 60px;
+  color: #fff;
+  font-family: "Oswald-Bold";
+  margin-top: 30px;
+}
+.middle-section:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(33, 14, 4, 0.5);
+}
+
+/*subscribe section*/
+.subscribe-section .table .table-cell {
+  vertical-align: top;
+}
+.subscribe-section .input-section {
+  padding-top: 50px;
+  max-width: 770px;
+  display: inline-block;
+}
+.subscribe-section .input-section .table .table-cell:last-child {
+  width: 225px;
+}
+.subscribe-section .input-section input {
+  height: 70px;
+  width: 100%;
+  font-size: 25px;
+}
+.subscribe-section .input-section input[type=text] {
+  padding: 20px;
+}
+.subscribe-section .input-section input[type=submit] {
+  background: #303030;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0 10px 10px 0;
+}
+
+/*footer style start*/
+.footer-section {
+  background: #303030;
+}
+.footer-section .table .table-cell {
+  vertical-align: top;
+}
+.footer-section .footer-link ul {
+  list-style: none;
+}
+.footer-section .footer-mrg {
+  margin: 0 -20px;
+}
+.footer-section .footer-mrg .footer-half {
+  width: 60%;
+  float: right;
+}
+.footer-section .footer-mrg .footer-half:first-child {
+  width: 40%;
+  float: left;
+}
+.footer-section .footer-mrg .footer-half .footer-left {
+  text-align: left;
+}
+.footer-section .footer-mrg .footer-half .footer-left p {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Montserrat-Regular";
+  margin-top: 30px;
+}
+.footer-section .footer-mrg .footer-half .footer-left h3 {
+  font-size: 33px;
+  line-height: 35px;
+  color: #fff;
+}
+.footer-section .footer-mrg .footer-half .footer-left .footer-loga a {
+  margin-right: 10px;
+  padding-top: 20px;
+}
+.footer-section .footer-mrg .footer-half .footer-right {
+  text-align: left;
+}
+.footer-section .footer-mrg .footer-half .footer-right h3 {
+  font-size: 33px;
+  line-height: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.footer-section .footer-mrg .footer-half .footer-right ul li {
+  margin-top: 15px;
+}
+.footer-section .footer-mrg .footer-half .footer-right ul li a {
+  font-size: 25px;
+  color: #fff;
+  line-height: 27px;
+  font-family: "Montserrat-Regular";
+}
+.footer-section .footer-mrg .footer-half .footer-right ul li a:hover {
+  color: #e8631c;
+  transition-duration: 500ms;
+}
+
+/*responsiv style start*/
+@media (max-width: 1023px) {
+  .banner-section .banner-content h1 {
+    font-size: 80px;
+    line-height: 82px;
+  }
+  .banner-section .banner-content p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .banner-section .banner-content a {
+    font-size: 22px;
+  }
+  .btn a {
+    max-width: 252px;
+    padding: 13px 0;
+    background: #e8631c;
+    margin-top: 25px;
+  }
+  .banner-section {
+    height: 460px;
+  }
+  .dance-section, .prince-section, .stik-section, .subscribe-section, .footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .dance-section h2, .footer-section h2, .subscribe-section h2, .stik-section h2, .prince-section h2 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .dance-section .dance-title p, .footer-section .dance-title p, .subscribe-section .dance-title p, .subscribe-section .subscribe-title p, .stik-section .dance-title p, .stik-section .stik-title p, .prince-section .dance-title p, .prince-section .prince-title p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .dance-full, .prince-section .prince-full, .stik-section .stik-full {
+    float: left;
+    width: 100%;
+    padding-top: 40px;
+  }
+  .dance-bg, .prince-section .prince-full .prince-mrg .prince-bg {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    line-height: 1px;
+  }
+  .dance-mrg, .prince-section .prince-full .prince-mrg {
+    margin: 0 -15px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content {
+    padding: 40px 20px 20px 20px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content h3 {
+    padding-top: 30px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 18px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content .btn a {
+    padding: 13px;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .best-section .content {
+    padding-left: 30px;
+  }
+  .best-section .content h2 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .best-section .content p {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 21px;
+  }
+  .best-section .content.right {
+    padding-right: 30px;
+  }
+  .best-section .content {
+    max-width: 417px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg .stik-content h3 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg .stik-content h4 {
+    font-size: 35px;
+    line-height: 37px;
+    margin-top: 20px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg {
+    padding: 0 25px;
+  }
+  .stik-section .stik-full .stik-mrg {
+    margin: 0 -25px;
+  }
+  .middle-content p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .middle-section .middle-content h3 {
+    font-size: 40px;
+    line-height: 42px;
+    margin-top: 30px;
+  }
+  .best-section .best-image {
+    height: 580px;
+  }
+  .middle-section {
+    height: 505px;
+  }
+  .subscribe-section .input-section input {
+    height: 55px;
+    font-size: 20px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-left h3 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-left p {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 19px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right h3 {
+    font-size: 25px;
+    line-height: 27px;
+    padding-bottom: 0px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right ul li a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .footer-loga img {
+    width: 30px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right ul li {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 979px) {
+  .header-section nav ul li {
+    display: inline-block;
+    padding: 0 18px;
+  }
+  .header-section nav ul li a {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .banner-section .banner-content h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .banner-section .banner-content p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .banner-section .btn a {
+    max-width: 183px;
+    padding: 8px 0;
+    background: #e8631c;
+    margin-top: 18px;
+  }
+  .banner-section .banner-content a {
+    font-size: 19px;
+  }
+  .banner-section {
+    height: 308px;
+  }
+  .dance-section, .prince-section, .stik-section, .subscribe-section, .footer-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .dance-section h2, .footer-section h2, .subscribe-section h2, .stik-section h2, .prince-section h2 {
+    font-size: 35px;
+    line-height: 37px;
+  }
+  .dance-section .dance-title p, .footer-section .dance-title p, .subscribe-section .dance-title p, .subscribe-section .subscribe-title p, .stik-section .dance-title p, .stik-section .stik-title p, .prince-section .dance-title p, .prince-section .prince-title p {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .dance-full, .prince-section .prince-full, .stik-section .stik-full {
+    padding-top: 25px;
+  }
+  .dance-bg, .prince-section .prince-full .prince-mrg .prince-bg {
+    padding: 0 10px;
+  }
+  .dance-mrg, .prince-section .prince-full .prince-mrg {
+    margin: 0 -10px;
+  }
+  .dance-section .dance-full .dance-mrg .dance-content, .footer-section .dance-full .dance-mrg .dance-content, .subscribe-section .dance-full .dance-mrg .dance-content, .stik-section .dance-full .dance-mrg .dance-content, .stik-section .stik-full .dance-mrg .dance-content, .prince-section .dance-full .dance-mrg .dance-content, .prince-section .prince-full .dance-mrg .dance-content, .prince-section .prince-full .prince-mrg .dance-content {
+    background: #303030;
+    padding: 8px;
+  }
+  .dance-section .dance-full .dance-mrg .dance-content h3, .footer-section .dance-full .dance-mrg .dance-content h3, .subscribe-section .dance-full .dance-mrg .dance-content h3, .stik-section .dance-full .dance-mrg .dance-content h3, .stik-section .stik-full .dance-mrg .dance-content h3, .prince-section .dance-full .dance-mrg .dance-content h3, .prince-section .prince-full .dance-mrg .dance-content h3, .prince-section .prince-full .prince-mrg .dance-content h3 {
+    color: #fff;
+    line-height: 25px;
+    font-size: 23px;
+  }
+  .dance-section .dance-full .dance-mrg .dance-content p, .footer-section .dance-full .dance-mrg .dance-content p, .subscribe-section .dance-full .dance-mrg .dance-content p, .stik-section .dance-full .dance-mrg .dance-content p, .stik-section .stik-full .dance-mrg .dance-content p, .prince-section .dance-full .dance-mrg .dance-content p, .prince-section .prince-full .dance-mrg .dance-content p, .prince-section .prince-full .prince-mrg .dance-content p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 9px;
+  }
+  .owl-dots {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content {
+    padding: 20px 10px 20px 10px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content h3 {
+    padding-top: 15px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+  .prince-section .prince-full .prince-mrg .prince-bg .prince-content .btn a {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .btn a {
+    max-width: 184px;
+  }
+  .best-section .content h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .best-section .content p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 17px;
+  }
+  .best-section .content .btn a {
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .best-section .best-image {
+    height: 451px;
+  }
+  .best-section .content {
+    padding-left: 20px;
+  }
+  .best-section .content.right {
+    padding-right: 12px;
+  }
+  .best-section .content {
+    max-width: 345px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg .stik-content h3 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg .stik-content h4 {
+    font-size: 25px;
+    line-height: 27px;
+    margin-top: 15px;
+  }
+  .middle-content p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .middle-section .middle-content h3 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+  .middle-section {
+    height: 283px;
+  }
+  .subscribe-section .input-section {
+    padding-top: 30px;
+  }
+  .subscribe-section .input-section input {
+    height: 45px;
+    font-size: 17px;
+  }
+  .footer-section .footer-mrg .footer-half {
+    padding: 0 10px;
+  }
+  .footer-section .footer-mrg {
+    margin: 0 -10px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-left h3 {
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-left p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right h3 {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 0px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right ul li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right ul li {
+    margin-top: 7px;
+  }
+  .footer-section .footer-mrg .footer-half .footer-left .footer-loga a {
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header-section nav {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header-section .table .table-cell {
+    display: block;
+  }
+  .header-section .table .table-cell:first-child {
+    width: 100%;
+    text-align: center;
+  }
+  .header-section .logo {
+    text-align: center;
+  }
+  .header-section .table .table-cell:last-child {
+    width: 100%;
+  }
+  .header-section .search {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .banner-section .banner-content h1 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+  .banner-section .btn a {
+    max-width: 176px;
+    margin-top: 15px;
+  }
+  .banner-section .banner-content p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .banner-section .banner-content a {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .dance-section, .prince-section, .stik-section, .subscribe-section, .footer-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .dance-section .dance-title p, .footer-section .dance-title p, .subscribe-section .dance-title p, .subscribe-section .subscribe-title p, .stik-section .dance-title p, .stik-section .stik-title p, .prince-section .dance-title p, .prince-section .prince-title p {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .dance-section h2, .footer-section h2, .subscribe-section h2, .stik-section h2, .prince-section h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .dance-bg, .prince-section .prince-full .prince-mrg .prince-bg {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .best-section .table .table-cell {
+    display: block;
+  }
+  .best-section .table:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .best-section .table:last-child .table-cell:first-child {
+    order: 2;
+  }
+  .best-section .best-image {
+    background: none;
+    height: auto;
+  }
+  .best-section .best-image img {
+    width: 100%;
+    display: block;
+  }
+  .dance-title, .prince-section .prince-title, .stik-section .stik-title, .subscribe-section .subscribe-title {
+    max-width: none;
+    display: inline-block;
+  }
+  .subscribe-section .input-section .table .table-cell:last-child {
+    width: 167px;
+  }
+  .footer-section .footer-mrg {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section .footer-mrg .footer-half:first-child {
+    width: 100%;
+    order: 2;
+  }
+  .footer-section .footer-mrg .footer-half:last-child {
+    width: 100%;
+  }
+  .footer-section .footer-mrg .footer-half .footer-right {
+    margin-top: 30px;
+  }
+  .footer-right .table {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+  .footer-right .table .table-cell {
+    width: 50%;
+  }
+  .footer-right .table .table-cell:last-child {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-loga {
+    text-align: center;
+  }
+  .best-section .content {
+    max-width: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .best-section .content.right {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .stik-section .stik-full .stik-mrg .stik-bg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .middle-section {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .middle-section .middle-content {
+    position: relative;
+    max-width: none;
+    transform: none;
+    left: 0;
+  }
+  .subscribe-section .input-section .table .table-cell:last-child {
+    width: 110px;
+  }
+}
